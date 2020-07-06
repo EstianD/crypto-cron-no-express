@@ -8,18 +8,19 @@ const getDateTimestamp = () => {
    Date.time = function() { return Date.now().getUnixTime(); }
 
    // DATE INSTANCE
-   let t = new Date()
+   // let t = new Date()
    
    // GET DATE VARIABLES
-   const year = t.getFullYear()
-   const month = t.getMonth() 
-   const day = t.getDate()
-   const hours = t.getHours()
-   const minutes = t.getMinutes()
-   const seconds = t.getSeconds()
+   // const year = t.getFullYear()
+   // const month = t.getMonth() 
+   // const day = t.getDate()
+   // const hours = t.getHours()
+   // const minutes = t.getMinutes()
+   // const seconds = t.getSeconds()
    
    // CONVERT DATE TO TIMESTAMP
-   let timestamp = new Date(year, month, day, hours, minutes, seconds).getUnixTime()
+   let timestamp = new Date().getTime()
+   // let timestamp = new Date(year, month, day, hours, minutes).getUnixTime()
 
    return timestamp
 }
